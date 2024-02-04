@@ -7,4 +7,4 @@ RUN perl Makefile.PL
 RUN make test
 RUN make install
 WORKDIR /
-ENTRYPOINT ["exiftool", "-json", "-b", "-a", "-"]
+ENTRYPOINT ["exiftool", "-json", "-b", "-a", "-c", "%.8f degrees", "-"]
